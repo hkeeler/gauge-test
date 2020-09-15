@@ -12,6 +12,7 @@ boto3 = "*"
 tabulate = "*"
 selenium = "*"
 chromedriver-binary = "~=85.0.4183"
+splinter = "*"
 
 [requires]
 python_version = "3.8"
