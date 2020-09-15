@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+getgauge = "*"
+boto3 = "*"
+tabulate = "*"
+selenium = "*"
+chromedriver-binary = "~=85.0.4183"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
