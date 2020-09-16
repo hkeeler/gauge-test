@@ -134,9 +134,12 @@ tags: Identity and Access Management
 
 ## Ensure security questions are registered in the AWS account.
 
-tags: Identity and Access Management
+tags: Identity and Access Management, browser
 
-* Add test step details here!
+* User is logged in to AWS Console on "us-east-1" region.
+* Browse to "https://console.aws.amazon.com/billing/home?#/account".
+* Scroll page to "Configure Security Challenge Questions".
+* Take a screenshot.
 
 
 ## Ensure IAM policies are attached only to groups or roles.
@@ -148,16 +151,22 @@ tags: Identity and Access Management
 
 ## Ensure contact details are up to date.
 
-tags: Identity and Access Management
+tags: Identity and Access Management, browser
 
-* Add test step details here!
+* User is logged in to AWS Console on "us-east-1" region.
+* Browse to "https://console.aws.amazon.com/billing/home?#/account".
+* Scroll page to "Contact Information".
+* Take a screenshot.
 
 
 ## Ensure Security contact information is registered. 
 
-tags: Identity and Access Management
+tags: Identity and Access Management, browser
 
-* Add test step details here!
+* User is logged in to AWS Console on "us-east-1" region.
+* Browse to "https://console.aws.amazon.com/billing/home?#/account".
+* Scroll page to "Alternate Contacts".
+* Take a screenshot.
 
 
 ## Ensure IAM instance roles are used for AWS resource access from instances. 
