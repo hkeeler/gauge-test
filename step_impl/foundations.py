@@ -134,6 +134,7 @@ def load_config_rules():
     # Stash credential report for use in scenarios
     data_store.spec['managed_config_rules'] = managed_rules
 
+'''
 @after_spec
 def what_in_the_registry(context):
     import inspect
@@ -148,4 +149,4 @@ def what_in_the_registry(context):
         print(f'step_info.instance: {step_info.instance}')
         print(f'step_info.aliases: {step_info.aliases}')
         print(f'step_info.span: {step_info.span}')
-
+'''
