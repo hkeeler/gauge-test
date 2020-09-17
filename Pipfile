@@ -15,8 +15,5 @@ chromedriver-binary = "~=85.0.4183"
 splinter = "*"
 pillow = "*"
 
-[requires]
-python_version = "3.8"
-
 [pipenv]
 allow_prereleases = true
