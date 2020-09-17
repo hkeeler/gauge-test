@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // FIXME: Can't run browser tests yet since login to
                 //        AWS Console is still done by hand.
-                sh 'pipenv shell && gauge run --tags "\!browser"'
+                sh 'pipenv shell && gauge run --tags "\\!browser"'
             }
         }
     }
