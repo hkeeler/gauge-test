@@ -136,6 +136,7 @@ tags: Identity and Access Management
 
 tags: Identity and Access Management, browser
 
+* Get browser
 * User is logged in to AWS Console on "us-east-1" region.
 * Browse to "https://console.aws.amazon.com/billing/home?#/account".
 * Scroll page to "Configure Security Challenge Questions".
@@ -153,6 +154,7 @@ tags: Identity and Access Management
 
 tags: Identity and Access Management, browser
 
+* Get browser
 * User is logged in to AWS Console on "us-east-1" region.
 * Browse to "https://console.aws.amazon.com/billing/home?#/account".
 * Scroll page to "Contact Information".
@@ -163,6 +165,7 @@ tags: Identity and Access Management, browser
 
 tags: Identity and Access Management, browser
 
+* Get browser
 * User is logged in to AWS Console on "us-east-1" region.
 * Browse to "https://console.aws.amazon.com/billing/home?#/account".
 * Scroll page to "Alternate Contacts".
