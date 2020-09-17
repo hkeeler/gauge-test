@@ -5,6 +5,14 @@ from splinter import Browser
 from time import sleep
 
 
+@step('Get browser')
+def get_browser():
+
+    if not data_store.spec.get('browser', None):       
+        # Stash browser instance in Spec's data store
+        data_store.spec['browser'] = Browser('chrome')
+
+
 @step("Browse to <url>.")
 def browse_to(url):
     browser = data_store.spec['browser']
@@ -62,22 +70,13 @@ def write_screenshot():
     # SEE:  https://splinter.readthedocs.io/en/latest/screenshot.html
     actual_path = browser.screenshot(path_with_prefix, full=True)
 
-    #special_pic = browser.find_by_text('Alternate Contacts').first.screenshot(name=path_with_prefix, full=True)
-    #print(f'SPECIAL: {special_pic}')
-
     return actual_path
-
-
-# FIXME: Switch to "Browser" singleton
-@before_spec()
-def init_browser():
-    browser = Browser('chrome')
-
-    # Stash credential report for use in scenarios
-    data_store.spec['browser'] = browser
 
 
 @after_spec()
 def close_browser():
-    browser = data_store.spec['browser']
-    #browser.quit()
+    try:
+        browser = data_store.spec['browser']
+        browser.quit()
+    except KeyError:
+        pass
