@@ -98,7 +98,7 @@ tags: Identity and Access Management
 
      | Parameter                  | Value |
      |----------------------------|-------|
-     | MinimumPasswordLength      | 14    |
+     | MinimumPasswordLength      | 12    |
 
 
 ## Ensure IAM password policy prevents password reuse.
